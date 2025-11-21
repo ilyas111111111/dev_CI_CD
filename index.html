@@ -16,17 +16,20 @@
 <div class="loader"></div>
 
 <style>
-.loader {
-  width: 40px;
-  height: 40px;
-  border: 4px solid #ccc;
-  border-top-color: #00eaff;
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
+.welcome2 {
+  font-size: 36px;
+  color: #0ff;
+  text-align: center;
+  margin-top: 60px;
+  opacity: 0;
+  animation: fadeGlow 2s ease forwards;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  font-family: 'Poppins', sans-serif;
 }
 
-@keyframes spin {
-  to { transform: rotate(360deg); }
+@keyframes fadeGlow {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 </style>
 
